@@ -1,0 +1,18 @@
+#main-content-container {
+  width: 1000px;
+  height: 500px;
+  background-color: #1b191e;
+  border-radius: 27px;
+  box-shadow: 13px 13px 5px rgba(0, 0, 0, 0.7);
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#main-content {
+  padding-left: 60px;
+  padding-right: 20px;
+}

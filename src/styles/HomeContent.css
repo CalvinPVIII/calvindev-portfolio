@@ -1,0 +1,32 @@
+#home-content-header {
+  font-weight: 300;
+  font-size: 150px;
+}
+
+.social-icon {
+  width: 30px;
+}
+
+.social-link-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+#social-links {
+  display: flex;
+  gap: 20px;
+  margin-top: -100px;
+}
+
+#socials-spacer {
+  margin-top: 5px;
+  border-right: 1px solid white;
+  height: 40px;
+}
+
+#home-terminal {
+  margin-top: 15px;
+}

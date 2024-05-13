@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+  background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url("../src/assets/images/background.png");
+  background-size: cover;
+  font-family: "Kumbh Sans", sans-serif;
+  color: white;
+}
+
+.underline-text {
+  text-decoration: underline solid #cc00ff;
+  text-decoration-thickness: 1px;
+}
+
+.terminal-text {
+  font-family: "Ubuntu Mono", monospace;
+}
