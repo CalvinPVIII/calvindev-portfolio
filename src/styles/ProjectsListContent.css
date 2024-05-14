@@ -1,0 +1,22 @@
+.project-list-name {
+  font-weight: 200;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+.project-list-spacer {
+  border-bottom: 0.5px solid #6b6b6b;
+  width: 1000px;
+  margin-left: -60px;
+}
+
+#projects-list-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.project-list-name:hover {
+  transform: scale(1.01);
+}
