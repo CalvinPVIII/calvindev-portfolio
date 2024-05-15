@@ -34,8 +34,8 @@
   padding-right: 50px;
 }
 
-.bullet-content-headers {
-  line-height: 12px;
+.bullet-short-headers {
+  margin-bottom: -10px;
 }
 
 #list-left-border {

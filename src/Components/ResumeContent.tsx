@@ -24,8 +24,8 @@ export default function ResumeContent() {
                 <li className="reveal-text-right">{job.title}</li>
               </div>
               <div className="bullet-content-headers reveal-text-right">
-                {job.company ? <p className="bullet-content">{job.company}</p> : null}
-                <p className="bullet-content">{job.date}</p>
+                {job.company ? <p className="bullet-content bullet-short-headers">{job.company}</p> : null}
+                <p className="bullet-content bullet-short-headers">{job.date}</p>
               </div>
               <p className="bullet-content reveal-text-right">{job.description}</p>
             </React.Fragment>

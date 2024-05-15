@@ -23,7 +23,7 @@ export default function AboutContext() {
         <p className="about-bullets reveal-text-left">Full stack developer</p>
         <p className="about-bullets reveal-text-left">Teacher</p>
         <p className="about-bullets reveal-text-left">Tech enthusiast</p>
-        <div id="left-side-about-spacer"></div>
+        <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.4, delay: 1 }} id="left-side-about-spacer"></motion.div>
         <p className="reveal-text-left">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, quam. Voluptates labore error aperiam beatae laudantium, expedita autem eius
           et ipsam, pariatur vitae ut corporis ipsum numquam debitis sapiente. Repellendus.
