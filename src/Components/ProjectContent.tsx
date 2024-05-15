@@ -24,7 +24,10 @@ export default function ProjectContent() {
               <img src={techBadges[tech]} className="tech-badge" key={tech} />
             ))}
           </div>
-          <p id="project-desc">{projects[currentProject].desc}</p>
+
+          <p className="reveal-text" id="project-desc">
+            {projects[currentProject].desc}
+          </p>
           <div id="project-buttons-container">
             {projects[currentProject].deployedSite ? (
               <a href={projects[currentProject].deployedSite} className="project-buttons" target="_none">
