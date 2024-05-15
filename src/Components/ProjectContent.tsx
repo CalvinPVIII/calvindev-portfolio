@@ -31,7 +31,7 @@ export default function ProjectContent() {
         <div id="project-content-body-left" className="project-content">
           <div id="project-tech-used">
             {projects[currentProject].techUsed.map((tech, index) => (
-              <img src={techBadges[tech]} className="tech-badge reveal-from-bottom" key={tech} style={{ animationDelay: `${index * 0.1 + 1}s` }} />
+              <img src={techBadges[tech]} className="tech-badge reveal-text-right" key={tech} style={{ animationDelay: `${index * 0.1 + 1}s` }} />
             ))}
           </div>
 
@@ -74,7 +74,7 @@ export default function ProjectContent() {
           </div>
         </div>
         <div id="project-content-body-right" className="project-content">
-          <div className="app-screenshot-wrapper reveal-from-middle">
+          <div className="app-screenshot-wrapper reveal-from-bottom">
             <a href={projects[currentProject].deployedSite} target="_none">
               <img src={projects[currentProject].screenshot} className="app-screenshot " />
             </a>
