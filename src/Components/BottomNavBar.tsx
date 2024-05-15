@@ -2,6 +2,7 @@ import "../styles/BottomNavBar.css";
 import { useSelector, useDispatch } from "react-redux";
 import { changeContent, CurrentContentOptions } from "../redux/currentContentSlice";
 import { IoMdArrowBack } from "react-icons/io";
+import { motion } from "framer-motion";
 
 export default function BottomNavBar() {
   const dispatch = useDispatch();
@@ -26,24 +27,24 @@ export default function BottomNavBar() {
     <div id="bottom-navbar">
       {currentContent === "home" ? (
         <div id="bottom-navbar-content">
-          <div className="bottom-content-wrapper" onClick={() => handleChangeContent("about")}>
+          <div className="bottom-content-wrapper reveal-text" onClick={() => handleChangeContent("about")}>
             <p>about</p>
           </div>
-          <div className="bottom-content-wrapper" onClick={() => handleChangeContent("projects")}>
+          <div className="bottom-content-wrapper reveal-text" onClick={() => handleChangeContent("projects")}>
             <p>projects</p>
           </div>
-          <div className="bottom-content-wrapper" onClick={() => handleChangeContent("resume")}>
+          <div className="bottom-content-wrapper reveal-text" onClick={() => handleChangeContent("resume")}>
             <p>resume</p>
           </div>
         </div>
       ) : (
         <div id="bottom-nav-back">
-          <div id="bottom-content-back" onClick={handleBackArrow}>
+          <motion.div id="bottom-content-back" onClick={handleBackArrow} initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
             <IoMdArrowBack size={30} />
             <div id="arrow-spacer"></div>
-          </div>
-          <div className=" bottom-nav-center">
-            <p>{currentContent}</p>
+          </motion.div>
+          <div className="bottom-nav-center">
+            <p className="reveal-text">{currentContent}</p>
           </div>
         </div>
       )}

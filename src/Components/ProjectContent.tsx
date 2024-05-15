@@ -5,6 +5,7 @@ import "../styles/ProjectContent.css";
 import { techBadges } from "../ts/projects";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { IoDownloadOutline } from "react-icons/io5";
+import { IoLogoGithub } from "react-icons/io";
 
 export default function ProjectContent() {
   const currentProject = useSelector((state: CurrentContentOptions) => state.selectedProject);
@@ -23,7 +24,7 @@ export default function ProjectContent() {
               <img src={techBadges[tech]} className="tech-badge" key={tech} />
             ))}
           </div>
-          <p>{projects[currentProject].desc}</p>
+          <p id="project-desc">{projects[currentProject].desc}</p>
           <div id="project-buttons-container">
             {projects[currentProject].deployedSite ? (
               <a href={projects[currentProject].deployedSite} className="project-buttons" target="_none">
@@ -38,6 +39,10 @@ export default function ProjectContent() {
                 download
               </a>
             ) : null}
+            <a href={projects[currentProject].sourceCode} className="project-buttons" target="_none">
+              <IoLogoGithub size={24} />
+              source
+            </a>
           </div>
         </div>
         <div id="project-content-body-right" className="project-content">

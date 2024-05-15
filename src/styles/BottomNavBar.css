@@ -21,10 +21,9 @@
 }
 
 .bottom-content-wrapper p {
-  transition: all 0.2s ease-out;
+  /* transition: all 0.2s ease-out; */
   transform: scale(1.8);
   font-weight: 200;
-
   width: fit-content;
 }
 
@@ -69,4 +68,39 @@
   height: 50px;
   border-left: 0.5px solid #6b6b6b;
   margin-left: 10px;
+}
+
+.bottom-text-mask {
+  background-color: #cc00ff;
+  width: fit-content;
+}
+
+.reveal-text {
+  color: transparent;
+  background: linear-gradient(white 0 0) no-repeat;
+  background-size: 100% 0%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: revealBottomToTop 0.7s 0.3s both;
+}
+
+@keyframes revealBottomToTop {
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+.hide-text {
+  color: transparent;
+  background: linear-gradient(white 0 0) no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: hideTopToBottom 0.7s 0.3s both;
+}
+
+@keyframes hideTopToBottom {
+  to {
+    background-size: 100% 0%;
+  }
 }
