@@ -21,7 +21,7 @@
 }
 
 .bottom-content-wrapper p {
-  /* transition: all 0.2s ease-out; */
+  transition: all 0.2s ease-out;
   transform: scale(1.8);
   font-weight: 200;
   width: fit-content;

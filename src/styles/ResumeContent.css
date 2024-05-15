@@ -1,13 +1,6 @@
 .resume-header {
   text-align: center;
   font-weight: 300;
-  /* position: sticky;
-  top: 0;
-  margin: auto;
-  width: 880px;
-  background-color: #1b191e;
-  padding-top: 10px;
-  padding-bottom: 10px; */
   width: 900px;
 }
 
@@ -42,7 +35,7 @@
 }
 
 .bullet-content-headers {
-  line-height: 5px;
+  line-height: 12px;
 }
 
 #list-left-border {
@@ -51,7 +44,6 @@
   border-left: 0.5px solid #6b6b6b;
   margin-right: -50px;
   margin-left: 10px;
-  margin-bottom: 2px;
 }
 
 #resume-list-wrapper {
