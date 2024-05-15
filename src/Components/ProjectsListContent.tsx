@@ -11,10 +11,10 @@ export default function ProjectsListContent() {
 
   return (
     <div id="projects-list-container">
-      {projects.map((project) => (
+      {Object.values(projects).map((project) => (
         <div className="project-item" onClick={() => handleProjectClick(project.name)} key={project.name}>
           <h2 className="project-list-name">{project.name}</h2>
-          {projects.indexOf(project) !== projects.length - 1 ? <div className="project-list-spacer"></div> : null}
+          {Object.values(projects).indexOf(project) !== Object.values(projects).length - 1 ? <div className="project-list-spacer"></div> : null}
         </div>
       ))}
     </div>
