@@ -18,15 +18,20 @@ export default function AboutContext() {
         </h1>
 
         <button id="contact-me-button" className=" reveal-text-left">
-          Contact Me
+          <a href="mailto:calvin.will.dev@gmail.com" id="contact-me">
+            Contact Me
+          </a>
         </button>
         <p className="about-bullets reveal-text-left">Full stack developer</p>
-        <p className="about-bullets reveal-text-left">Teacher</p>
+        <p className="about-bullets reveal-text-left">Instructor</p>
         <p className="about-bullets reveal-text-left">Tech enthusiast</p>
         <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.4, delay: 1 }} id="left-side-about-spacer"></motion.div>
-        <p className="reveal-text-left">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, quam. Voluptates labore error aperiam beatae laudantium, expedita autem eius
-          et ipsam, pariatur vitae ut corporis ipsum numquam debitis sapiente. Repellendus.
+        <p className="reveal-text-left about-content-text">
+          As passionate software developer, I thrive on the intersection of creativity and technology. With a diverse skill set spanning various
+          languages and frameworks, I'm always eager to explore new challenges and push the boundaries of what's possible. My journey in software
+          development has been shaped by a commitment to continuous learning and a deep-rooted belief in the power of collaboration. Whether it's
+          crafting elegant code, mentoring aspiring developers, or contributing to innovative projects, I am driven by a genuine love for the craft
+          and a desire to make a meaningful impact in the ever-evolving tech landscape.
         </p>
       </div>
       <motion.div id="about-spacer" initial={{ scaleY: 0 }} animate={{ scaleY: 1 }} transition={{ duration: 0.4, delay: 0.6 }}></motion.div>
