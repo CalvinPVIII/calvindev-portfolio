@@ -1,28 +1,51 @@
 import "../styles/AboutContent.css";
 import SkillsIcon from "./SkillsIcon";
 import skills from "../ts/skills";
-
+import { motion } from "framer-motion";
 export default function AboutContext() {
   return (
     <div id="about-container">
       <div id="about-left" className="about-content">
-        <h1 className="underline-text">calvin.dev</h1>
-        <button id="contact-me-button">Contact Me</button>
-        <p className="about-bullets">Full stack developer</p>
-        <p className="about-bullets">Teacher</p>
-        <p className="about-bullets">Tech enthusiast</p>
+        <h1>
+          <span className="reveal-text">calvin.dev</span>
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
+            className="underline"
+            style={{ marginTop: "20px", width: "200px" }}
+          ></motion.div>
+        </h1>
+
+        <button id="contact-me-button" className=" reveal-text-left">
+          Contact Me
+        </button>
+        <p className="about-bullets reveal-text-left">Full stack developer</p>
+        <p className="about-bullets reveal-text-left">Teacher</p>
+        <p className="about-bullets reveal-text-left">Tech enthusiast</p>
         <div id="left-side-about-spacer"></div>
-        <p>
+        <p className="reveal-text-left">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, quam. Voluptates labore error aperiam beatae laudantium, expedita autem eius
           et ipsam, pariatur vitae ut corporis ipsum numquam debitis sapiente. Repellendus.
         </p>
       </div>
-      <div id="about-spacer"></div>
+      <motion.div id="about-spacer" initial={{ scaleY: 0 }} animate={{ scaleY: 1 }} transition={{ duration: 0.4, delay: 0.6 }}></motion.div>
       <div id="about-right" className="about-content">
-        <h1 className="underline-text">skills</h1>
+        <h1>
+          <span className="reveal-text">skills</span>
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
+            className="underline"
+            style={{ marginTop: "20px", width: "90px" }}
+          ></motion.div>
+        </h1>
         <div id="skills-cards">
-          {skills.map((skill) => (
-            <SkillsIcon name={skill.name} icon={skill.icon} key={skill.name} />
+          {skills.map((skill, index) => (
+            <>
+              <SkillsIcon index={index} name={skill.name} icon={skill.icon} />
+            </>
           ))}
         </div>
       </div>

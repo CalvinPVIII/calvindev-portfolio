@@ -20,11 +20,11 @@
   width: 60px;
   border-bottom: 0.5px solid #6b6b6b;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 35px;
 }
 
 .about-bullets {
-  line-height: 4px;
+  margin-bottom: -10px;
 }
 
 #about-spacer {
