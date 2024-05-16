@@ -1,0 +1,18 @@
+.bottom-content-wrapper-small {
+  width: 33%;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-content-wrapper-small p {
+  transition: all 0.2s ease-out;
+  transform: scale(1.2);
+  font-weight: 200;
+  width: fit-content;
+}
+
+#bottom-navbar-content .bottom-content-wrapper-small:nth-child(-n + 2) {
+  border-right: 0.5px solid #6b6b6b;
+}

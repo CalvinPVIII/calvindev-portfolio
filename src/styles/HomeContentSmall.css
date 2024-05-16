@@ -1,0 +1,12 @@
+#home-content-header-small {
+  font-weight: 300;
+  font-size: 400%;
+}
+#social-links-small {
+  display: flex;
+  gap: 20px;
+}
+
+#home-content-small-wrapper {
+  margin-top: 200px;
+}

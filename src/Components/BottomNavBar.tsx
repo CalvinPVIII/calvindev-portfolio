@@ -1,9 +1,13 @@
 import "../styles/BottomNavBar.css";
+import "../styles/BottomNavBarSmall.css";
+
 import { useSelector, useDispatch } from "react-redux";
 import { changeContent, CurrentContentOptions } from "../redux/currentContentSlice";
 import { IoMdArrowBack } from "react-icons/io";
+import { useMediaQuery } from "react-responsive";
 
 export default function BottomNavBar() {
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 1000px)" });
   const dispatch = useDispatch();
   const currentContent = useSelector((state: CurrentContentOptions) => state.value);
   const currentVisibleProject = useSelector((state: CurrentContentOptions) => state.selectedProject);
@@ -26,13 +30,25 @@ export default function BottomNavBar() {
     <div id="bottom-navbar">
       {currentContent === "home" ? (
         <div id="bottom-navbar-content">
-          <div className="bottom-content-wrapper reveal-text" style={{ animationDelay: "1s" }} onClick={() => handleChangeContent("about")}>
+          <div
+            className={isSmallScreen ? "bottom-content-wrapper-small reveal-text" : "bottom-content-wrapper reveal-text"}
+            style={{ animationDelay: "1s" }}
+            onClick={() => handleChangeContent("about")}
+          >
             <p>about</p>
           </div>
-          <div className="bottom-content-wrapper reveal-text" onClick={() => handleChangeContent("projects")} style={{ animationDelay: "1.4s" }}>
+          <div
+            className={isSmallScreen ? "bottom-content-wrapper-small reveal-text" : "bottom-content-wrapper reveal-text"}
+            onClick={() => handleChangeContent("projects")}
+            style={{ animationDelay: "1.4s" }}
+          >
             <p>projects</p>
           </div>
-          <div className="bottom-content-wrapper reveal-text" onClick={() => handleChangeContent("resume")} style={{ animationDelay: "1.8s" }}>
+          <div
+            className={isSmallScreen ? "bottom-content-wrapper-small reveal-text" : "bottom-content-wrapper reveal-text"}
+            onClick={() => handleChangeContent("resume")}
+            style={{ animationDelay: "1.8s" }}
+          >
             <p>resume</p>
           </div>
         </div>
