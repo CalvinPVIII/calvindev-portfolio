@@ -1,6 +1,6 @@
 #home-content-header-small {
   font-weight: 300;
-  font-size: 400%;
+  font-size: calc(5.5vw + 5.5vh);
 }
 #social-links-small {
   display: flex;
@@ -8,5 +8,9 @@
 }
 
 #home-content-small-wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
   margin-top: 200px;
 }

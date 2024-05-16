@@ -2,19 +2,22 @@ import { useSelector } from "react-redux";
 import projects from "../ts/projects";
 import { CurrentContentOptions } from "../redux/currentContentSlice";
 import "../styles/ProjectContent.css";
+import "../styles/ProjectContentSmall.css";
+
 import { techBadges } from "../ts/projects";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { IoDownloadOutline } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 export default function ProjectContent() {
   const currentProject = useSelector((state: CurrentContentOptions) => state.selectedProject);
-
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 1000px)" });
   if (!currentProject) return;
   return (
     <>
-      <div id="project-content-header">
+      <div id={isSmallScreen ? "project-content-header-small" : "project-content-header"}>
         <img src={projects[currentProject].icon} className="reveal-text" />
         <h1>
           <span className="reveal-text">{projects[currentProject].name}</span>
@@ -27,18 +30,18 @@ export default function ProjectContent() {
           ></motion.div>
         </h1>
       </div>
-      <div id="project-content-body">
-        <div id="project-content-body-left" className="project-content">
-          <div id="project-tech-used">
+      <div id={isSmallScreen ? "project-content-body-small" : "project-content-body"}>
+        <div id="project-content-body-left" className={isSmallScreen ? "project-content-small" : "project-content"}>
+          <div id={isSmallScreen ? "project-tech-used-small" : "project-tech-used"}>
             {projects[currentProject].techUsed.map((tech, index) => (
               <img src={techBadges[tech]} className="tech-badge reveal-text-right" key={tech} style={{ animationDelay: `${index * 0.1 + 1}s` }} />
             ))}
           </div>
 
-          <p className="reveal-text" style={{ animationDelay: "1s" }} id="project-desc">
+          <p className="reveal-text" style={{ animationDelay: "1s" }} id={isSmallScreen ? "project-desc-small" : "project-desc"}>
             {projects[currentProject].desc}
           </p>
-          <div id="project-buttons-container">
+          <div id={isSmallScreen ? "project-buttons-container-small" : "project-buttons-container"}>
             {projects[currentProject].deployedSite ? (
               <a
                 href={projects[currentProject].deployedSite}
@@ -73,10 +76,10 @@ export default function ProjectContent() {
             </a>
           </div>
         </div>
-        <div id="project-content-body-right" className="project-content">
+        <div id="project-content-body-right" className={isSmallScreen ? "project-content-small" : "project-content"}>
           <div className="app-screenshot-wrapper reveal-from-bottom">
             <a href={projects[currentProject].deployedSite} target="_none">
-              <img src={projects[currentProject].screenshot} className="app-screenshot " />
+              <img src={projects[currentProject].screenshot} className={isSmallScreen ? "app-screenshot-small" : "app-screenshot"} />
             </a>
           </div>
         </div>

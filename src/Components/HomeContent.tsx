@@ -19,7 +19,7 @@ export default function HomeContent() {
           animate={{ scaleX: 1 }}
           transition={{ duration: 0.4, delay: 0.6 }}
           className="underline"
-          style={isSmallScreen ? { width: "100%", maxWidth: "300px" } : { width: "75%", marginTop: "-24px" }}
+          style={isSmallScreen ? { width: "100%" } : { width: "75%", marginTop: "-24px" }}
         ></motion.div>
       </h1>
       <div id={isSmallScreen ? "social-links-small" : "social-links"} className="reveal-text">
