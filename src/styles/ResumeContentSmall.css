@@ -1,0 +1,17 @@
+#resume-content-wrapper-small {
+  overflow-y: scroll;
+  max-height: 73vh;
+  overflow-x: hidden;
+}
+
+.resume-header-small {
+  text-align: center;
+  font-weight: 300;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+}
+
+.small-underline {
+  margin: auto;
+}
