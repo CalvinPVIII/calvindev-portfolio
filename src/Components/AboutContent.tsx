@@ -1,11 +1,14 @@
 import "../styles/AboutContent.css";
+import "../styles/AboutContentSmall.css";
 import SkillsIcon from "./SkillsIcon";
 import skills from "../ts/skills";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 export default function AboutContext() {
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 1000px)" });
   return (
-    <div id="about-container">
-      <div id="about-left" className="about-content">
+    <div id={isSmallScreen ? "about-container-small" : "about-container"}>
+      <div id={isSmallScreen ? "about-left-small" : "about-left"} className={isSmallScreen ? "about-content-small" : "about-content"}>
         <h1>
           <span className="reveal-text">calvin.dev</span>
           <motion.div
@@ -35,7 +38,7 @@ export default function AboutContext() {
         </p>
       </div>
       <motion.div id="about-spacer" initial={{ scaleY: 0 }} animate={{ scaleY: 1 }} transition={{ duration: 0.4, delay: 0.6 }}></motion.div>
-      <div id="about-right" className="about-content">
+      <div id="about-right" className={isSmallScreen ? "about-content-small" : "about-content"}>
         <h1>
           <span className="reveal-text">skills</span>
           <motion.div
