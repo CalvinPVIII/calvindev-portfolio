@@ -31,7 +31,11 @@ export default function ResumeContent() {
                 {job.company ? <p className="bullet-content bullet-short-headers">{job.company}</p> : null}
                 <p className="bullet-content bullet-short-headers">{job.date}</p>
               </div>
-              <p className="bullet-content reveal-text-right">{job.description}</p>
+              {job.description.map((bullet, index) => (
+                <p className="bullet-content reveal-text-right" key={job.title + index}>
+                  {bullet}
+                </p>
+              ))}
             </React.Fragment>
           ))}
           <h1 className={isSmallScreen ? "resume-header-small reveal-text" : "resume-header reveal-text"}>education</h1>
@@ -56,7 +60,11 @@ export default function ResumeContent() {
                 {job.company ? <p className="bullet-content">{job.company}</p> : null}
                 <p className="bullet-content">{job.date}</p>
               </div>
-              <p className="bullet-content">{job.description}</p>
+              {job.description.map((bullet, index) => (
+                <p className="bullet-content reveal-text-right" key={job.title + index}>
+                  {bullet}
+                </p>
+              ))}
             </React.Fragment>
           ))}
         </ul>
