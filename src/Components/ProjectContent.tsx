@@ -46,7 +46,7 @@ export default function ProjectContent() {
               <a
                 href={projects[currentProject].deployedSite}
                 className="project-buttons reveal-text-left"
-                target="_none"
+                target="_blank"
                 style={{ animationDelay: "1.3s" }}
               >
                 <FaExternalLinkAlt />
@@ -58,7 +58,7 @@ export default function ProjectContent() {
               <a
                 href={projects[currentProject].downloadLink}
                 className="project-buttons reveal-text-left"
-                target="_none"
+                target="_blank"
                 style={{ animationDelay: "1.3s" }}
               >
                 <IoDownloadOutline size={24} />
@@ -68,7 +68,7 @@ export default function ProjectContent() {
             <a
               href={projects[currentProject].sourceCode}
               className="project-buttons reveal-text-left"
-              target="_none"
+              target="_blank"
               style={{ animationDelay: "1.3s" }}
             >
               <IoLogoGithub size={24} />
@@ -78,7 +78,7 @@ export default function ProjectContent() {
         </div>
         <div id="project-content-body-right" className={isSmallScreen ? "project-content-small" : "project-content"}>
           <div className="app-screenshot-wrapper reveal-from-bottom">
-            <a href={projects[currentProject].deployedSite} target="_none">
+            <a href={projects[currentProject].deployedSite} target="_blank">
               <img src={projects[currentProject].screenshot} className={isSmallScreen ? "app-screenshot-small" : "app-screenshot"} />
             </a>
           </div>
