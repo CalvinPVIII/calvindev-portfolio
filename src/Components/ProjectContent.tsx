@@ -44,6 +44,7 @@ export default function ProjectContent() {
           <div id={isSmallScreen ? "project-buttons-container-small" : "project-buttons-container"}>
             {projects[currentProject].deployedSite ? (
               <a
+                tabIndex={1}
                 href={projects[currentProject].deployedSite}
                 className="project-buttons reveal-text-left"
                 target="_blank"
@@ -56,6 +57,7 @@ export default function ProjectContent() {
 
             {projects[currentProject].downloadLink ? (
               <a
+                tabIndex={2}
                 href={projects[currentProject].downloadLink}
                 className="project-buttons reveal-text-left"
                 target="_blank"
@@ -66,6 +68,7 @@ export default function ProjectContent() {
               </a>
             ) : null}
             <a
+              tabIndex={3}
               href={projects[currentProject].sourceCode}
               className="project-buttons reveal-text-left"
               target="_blank"

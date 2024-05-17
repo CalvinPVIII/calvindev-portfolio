@@ -21,7 +21,7 @@ export default function AboutContext() {
         </h1>
 
         <button id="contact-me-button" className=" reveal-text-left">
-          <a href="mailto:calvin.will.dev@gmail.com" id="contact-me">
+          <a href="mailto:calvin.will.dev@gmail.com" id="contact-me" tabIndex={1}>
             Contact Me
           </a>
         </button>
@@ -37,7 +37,9 @@ export default function AboutContext() {
           and a desire to make a meaningful impact in the ever-evolving tech landscape.
         </p>
       </div>
-      <motion.div id="about-spacer" initial={{ scaleY: 0 }} animate={{ scaleY: 1 }} transition={{ duration: 0.4, delay: 0.6 }}></motion.div>
+      {isSmallScreen ? null : (
+        <motion.div id="about-spacer" initial={{ scaleY: 0 }} animate={{ scaleY: 1 }} transition={{ duration: 0.4, delay: 0.6 }}></motion.div>
+      )}
       <div id="about-right" className={isSmallScreen ? "about-content-small" : "about-content"}>
         <h1>
           <span className="reveal-text">skills</span>

@@ -31,6 +31,7 @@ export default function BottomNavBar() {
       {currentContent === "home" ? (
         <div id="bottom-navbar-content">
           <div
+            tabIndex={3}
             className={isSmallScreen ? "bottom-content-wrapper-small reveal-text" : "bottom-content-wrapper reveal-text"}
             style={{ animationDelay: "1s" }}
             onClick={() => handleChangeContent("about")}
@@ -38,6 +39,7 @@ export default function BottomNavBar() {
             <p>about</p>
           </div>
           <div
+            tabIndex={4}
             className={isSmallScreen ? "bottom-content-wrapper-small reveal-text" : "bottom-content-wrapper reveal-text"}
             onClick={() => handleChangeContent("projects")}
             style={{ animationDelay: "1.4s" }}
@@ -45,6 +47,7 @@ export default function BottomNavBar() {
             <p>projects</p>
           </div>
           <div
+            tabIndex={5}
             className={isSmallScreen ? "bottom-content-wrapper-small reveal-text" : "bottom-content-wrapper reveal-text"}
             onClick={() => handleChangeContent("resume")}
             style={{ animationDelay: "1.8s" }}
@@ -54,7 +57,7 @@ export default function BottomNavBar() {
         </div>
       ) : (
         <div id="bottom-nav-back">
-          <div id="bottom-content-back" onClick={handleBackArrow}>
+          <div id="bottom-content-back" onClick={handleBackArrow} tabIndex={3}>
             <IoMdArrowBack size={30} className="reveal-text" />
             <div id="arrow-spacer" className="reveal-text"></div>
           </div>

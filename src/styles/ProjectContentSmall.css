@@ -44,7 +44,6 @@
 }
 
 .app-screenshot-small {
-  max-width: 300px;
   max-height: 320px;
   box-shadow: 4px 4px 6px black;
   border-radius: 4px;

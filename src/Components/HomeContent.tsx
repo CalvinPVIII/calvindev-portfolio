@@ -23,12 +23,12 @@ export default function HomeContent() {
         ></motion.div>
       </h1>
       <div id={isSmallScreen ? "social-links-small" : "social-links"} className="reveal-text">
-        <a href="https://www.github.com/calvinpviii" className="social-link-item" target="_blank">
+        <a tabIndex={1} href="https://www.github.com/calvinpviii" className="social-link-item" target="_blank">
           <img src={githubImg} className="social-icon" />
           <p>calvinpviii</p>
         </a>
         <div id="socials-spacer"></div>
-        <a href="https://www.linkedin.com/in/calvinwill/" className="social-link-item" target="_blank">
+        <a tabIndex={2} href="https://www.linkedin.com/in/calvinwill/" className="social-link-item" target="_blank">
           <img src={linkedIn} className="social-icon" />
           <p>calvinwill</p>
         </a>

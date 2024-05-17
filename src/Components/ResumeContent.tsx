@@ -47,7 +47,7 @@ export default function ResumeContent() {
             style={
               isSmallScreen
                 ? { width: "10rem", marginTop: "-24px", marginBottom: "20px" }
-                : { width: "265px", marginTop: "-24px", marginLeft: "320px" }
+                : { width: "10rem", marginTop: "-24px", marginLeft: "370px" }
             }
           ></motion.div>
           {resume.education.map((job) => (
