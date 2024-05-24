@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# [Calvin.Dev](https://calvindev.net)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio website dedicated to showcasing my skills, experience, and projects.
 
-Currently, two official plugins are available:
+## View Deployed Site Here: [https://calvindev.net](https://calvindev.net)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies Used
 
-## Expanding the ESLint configuration
+- React
+- Redux
+- TypeScript
+- Node
+- React Icons
+- Framer Motion
+- Vite
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Local Setup Instructions
 
-- Configure the top-level `parserOptions` property like this:
+To view and host this website locally, follow these instructions:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+**Make sure you have Node.js version 16 or greater installed on your system. If you do not, installation instructions can be found [here](https://nodejs.org/en/download/prebuilt-installer).**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Using terminal, navigate to where you want to save the project, and run the command `git clone https://github.com/CalvinPVIII/calvindev-portfolio.git`.
+- Once the project has been cloned, navigate to the root directory by running the command `cd calvindev-portfolio`.
+- Inside the root directory, install all necessary dependencies by running the command `npm install`.
+- To view the project in a live dev server, run the command `npm run dev`. You'll find a link to the dev server in your terminal that you can copy and paste into your web browser.
+- To build the project for production, run the command `npm run build`.
+
+### License
+
+This website is licensed under the GNU General Public License v3.0. You can find more information about the license [here](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+If you encounter any bugs or unexpected behaviors, please [submit an issue on GitHub](https://github.com/CalvinPVIII/calvindev-portfolio/issues).
