@@ -2,6 +2,8 @@ import comicCompanionIcon from "../assets/images/icons/comic-companion.png";
 import senzuIcon from "../assets/images/icons/senzu-streams.png";
 import comicScreenshot from "../assets/images/icons/Screenshots/comiccompanionscreenshot.png";
 import senzuScreenshot from "../assets/images/icons/Screenshots/senzuscreenshot.png";
+import lhtp from "../assets/images/icons/lhtp.png";
+import lhtpScreenshot from "../assets/images/icons/Screenshots/lhtpscreenshot.png";
 
 interface ProjectInfo {
   name: string;
@@ -33,6 +35,15 @@ const projects: { [key: string]: ProjectInfo } = {
     deployedSite: "https://senzu-streams.netlify.app/",
     screenshot: senzuScreenshot,
     sourceCode: "https://github.com/CalvinPVIII/senzu-streams",
+  },
+  "Learn How To Program": {
+    name: "Learn How To Program",
+    icon: lhtp,
+    desc: "LearnHowToProgram is an in-depth full-stack development curriculum. As a pivotal member of the development team, I played a significant role in crafting and refining the curriculum, ensuring its efficacy in guiding aspiring web developers through their learning journey. Moreover, I actively participated in teaching and mentoring students, sharing my insights and expertise to help them grasp complex concepts and excel in their programming endeavors. Through my dedication and passion for web development, I helped shape LearnHowToProgram into a comprehensive and invaluable resource for individuals eager to embark on a career in coding.",
+    techUsed: ["React", "C#", "Redux"],
+    deployedSite: "https://www.learnhowtoprogram.com/",
+    screenshot: lhtpScreenshot,
+    sourceCode: "https://github.com/epicodus-curriculum",
   },
 };
 
