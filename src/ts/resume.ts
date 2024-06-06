@@ -5,8 +5,8 @@ const resume = {
       company: "Epicodus",
       date: "April 2022 - January 2024",
       description: [
-        "Directly trained and mentored over 100 students, acting as a subject matter expert in JavaScript, Ruby, and C#, maintaining a 5% higher than average student retention rate and equipping students with the necessary skills to become professional software developers.",
-        "Designed and developed a comprehensive 25-week web development curriculum, ensuring alignment with industry standards and best practices in software development.",
+        "Directly trained and mentored over 100 students, acting as a subject matter expert in JavaScript, Ruby, and C#, resulting in 18% higher graduation rates and 11% higher hiring rates compared to other classes.",
+        "Designed and developed a comprehensive 25-week web development curriculum, ensuring alignment with industry standards and best practices in software development, and equipping students with the skills to become professional software developers.",
         "Spearheaded the creation of innovative learning experiences and tools, including a virtual coding environment for real-time coding exercises and feedback.",
         "Consistently focused on continuous improvement by leveraging my expertise in React, Redux, and C# to design and implement internal tools, including automated student grouping and project grading systems, significantly enhancing team efficiency and productivity.",
       ],

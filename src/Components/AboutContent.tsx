@@ -32,9 +32,9 @@ export default function AboutContext() {
         <p className="reveal-text-left about-content-text">
           As passionate software developer, I thrive on the intersection of creativity and technology. With a diverse skill set spanning various
           languages and frameworks, I'm always eager to explore new challenges and push the boundaries of what's possible. My journey in software
-          development has been shaped by a commitment to continuous learning and a deep-rooted belief in the power of collaboration. Whether it's
-          crafting elegant code, mentoring aspiring developers, or contributing to innovative projects, I am driven by a genuine love for the craft
-          and a desire to make a meaningful impact in the ever-evolving tech landscape.
+          development has been shaped by a commitment to continuous learning and a deep-rooted belief in being better than I was the day before.
+          Whether it's crafting elegant code, mentoring aspiring developers, or contributing to innovative projects, I am driven by a genuine love for
+          the craft and a desire to make a meaningful impact in the ever-evolving tech landscape.
         </p>
       </div>
       {isSmallScreen ? null : (
