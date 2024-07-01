@@ -18,7 +18,7 @@ export default function ProjectContent() {
   return (
     <>
       <div id={isSmallScreen ? "project-content-header-small" : "project-content-header"}>
-        <img src={projects[currentProject].icon} className="reveal-text" />
+        {projects[currentProject].icon ? <img src={projects[currentProject].icon} className="reveal-text" /> : null}
         <h1>
           <span className="reveal-text">{projects[currentProject].name}</span>
           <motion.div

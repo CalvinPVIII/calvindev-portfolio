@@ -4,10 +4,11 @@ import comicScreenshot from "../assets/images/icons/Screenshots/comiccompanionsc
 import senzuScreenshot from "../assets/images/icons/Screenshots/senzuscreenshot.png";
 import lhtp from "../assets/images/icons/lhtp.png";
 import lhtpScreenshot from "../assets/images/icons/Screenshots/lhtpscreenshot.png";
+import loungeScreenshot from "../assets/images/icons/Screenshots/loungespotscreenshot.png";
 
 interface ProjectInfo {
   name: string;
-  icon: string;
+  icon?: string;
   desc: string;
   techUsed: string[];
   deployedSite?: string;
@@ -36,11 +37,19 @@ const projects: { [key: string]: ProjectInfo } = {
     screenshot: senzuScreenshot,
     sourceCode: "https://github.com/CalvinPVIII/senzu-streams",
   },
+  "Lounge Spot": {
+    name: "Lounge Spot",
+    desc: "Lounge Spot is full stack watch party app built to bring users together to watch their favorite videos in real time. The integrated chat feature keeps you connected, allowing seamless discussion and banter throughout the viewing experience. Built using Flask API, WebSockets, and React/TypeScript, Lounge Spot provides a robust and scalable platform for your online gatherings. With its user-friendly interface, creating and joining rooms is as easy as sending an invite to friends or family members. ",
+    techUsed: ["React", "TypeScript", "Python", "Flask"],
+    deployedSite: "https://loungespot.netlify.app/",
+    screenshot: loungeScreenshot,
+    sourceCode: "https://github.com/CalvinPVIII/Lounge-Spot",
+  },
   "Learn How To Program": {
     name: "Learn How To Program",
     icon: lhtp,
     desc: "LearnHowToProgram is an in-depth full-stack development curriculum. As a pivotal member of the development team, I played a significant role in crafting and refining the curriculum, ensuring its efficacy in guiding aspiring web developers through their learning journey. Moreover, I actively participated in teaching and mentoring students, sharing my insights and expertise to help them grasp complex concepts and excel in their programming endeavors. Through my dedication and passion for web development, I helped shape LearnHowToProgram into a comprehensive and invaluable resource for individuals eager to embark on a career in coding.",
-    techUsed: ["React", "C#", "Redux"],
+    techUsed: ["React", "C#", "Redux", "Ruby", "Rails"],
     deployedSite: "https://www.learnhowtoprogram.com/",
     screenshot: lhtpScreenshot,
     sourceCode: "https://github.com/epicodus-curriculum",
@@ -57,4 +66,8 @@ export const techBadges: { [key: string]: string } = {
   Express: "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB",
   Postgres: "https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white",
   Android: "https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white",
+  Python: "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+  Flask: "https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white",
+  Ruby: "https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white",
+  Rails: "https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white",
 };
