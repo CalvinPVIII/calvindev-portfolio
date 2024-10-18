@@ -3,21 +3,23 @@ const resume = {
     {
       title: "Software Developer Instructor",
       company: "Epicodus",
-      date: "April 2022 - January 2024",
+      date: "January 2022 - January 2024",
       description: [
-        "Directly trained and mentored over 100 students, acting as a subject matter expert in JavaScript, Ruby, and C#, resulting in 18% higher graduation rates and 11% higher hiring rates compared to other classes.",
-        "Designed and developed a comprehensive 25-week web development curriculum, ensuring alignment with industry standards and best practices in software development, and equipping students with the skills to become professional software developers.",
-        "Spearheaded the creation of innovative learning experiences and tools, including a virtual coding environment for real-time coding exercises and feedback.",
-        "Consistently focused on continuous improvement by leveraging my expertise in React, Redux, and C# to design and implement internal tools, including automated student grouping and project grading systems, significantly enhancing team efficiency and productivity.",
+        "Trained and mentored over 100 students, focusing on JavaScript, TypeScript, React, Ruby, and C#, which resulted in an 18% higher graduation rate and 11% higher hiring rate compared to other cohorts.",
+        "Led the effort in gathering and analyzing student feedback during a major curriculum overhaul, acting as the primary liaison between students and the development team. Implemented both short-term fixes and long-term improvements, ensuring the curriculum met evolving industry standards and student needs.",
+        "Developed and implemented internal tools using C#, ASP.NET, and React to streamline student grouping and automate project grading, reducing turnaround times to clients and students by 25%.",
+        "Designed and developed a comprehensive 25-week web development curriculum, aligning with industry standards to equip students with the skills needed to become professional developers.",
+        "Conducted hundreds of weekly code reviews, providing in-depth feedback to ensure students were on the right track and meeting industry expectations",
       ],
     },
     {
       title: "Freelance Developer",
       date: "October 2020",
       description: [
-        "Conducted client consultations to discern precise website requirements, adeptly translating client needs into actionable outcomes, resulting in a 100% satisfaction rate for personalized website delivery.",
-        "Built and deployed multiple applications using frameworks such as Rails, ASP.NET, Electron, and Capacitor, expanding my expertise in full-stack development.",
-        "Contributed to open-source projects, actively participating in the development community by resolving issues on repositories from organizations such as LinkedIn.",
+        "Collaborated as one of three developers to build and maintain a MERN stack website for a non-profit organization The Down Ballot, focusing on developing key features, implementing responsive UI components, and optimizing the backend API to ensure seamless user experience and real-time access to comprehensive election and voting resources.",
+        "Sole developer responsible for building and maintaining a Next.js website for the AHADI mental health initiative, including designing the entire site architecture and implementing a booking system that allows clients to schedule appointments with healthcare professionals, improving access to mental health services.",
+        "Delivered full-stack solutions with a strong emphasis on React, Next.js, ASP.NET, and Ruby on Rails, achieving 100% client satisfaction through tailored approaches and effective communication.",
+        "Partnered with design teams to translate complex design concepts into pixel-perfect web interfaces, maintaining brand integrity and visual aesthetics.",
       ],
     },
     {
